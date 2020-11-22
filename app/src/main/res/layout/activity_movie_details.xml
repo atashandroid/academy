@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
@@ -14,7 +15,7 @@
 
         <ImageView
             android:id="@+id/background_image"
-            android:layout_width="@dimen/zero_dp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/background_image_height"
             android:contentDescription="@null"
             app:layout_constraintStart_toStartOf="parent"
@@ -157,6 +158,8 @@
             android:layout_marginStart="@dimen/leftSideScreen_marginStart"
             android:layout_marginTop="@dimen/actorPic_maginTop"
             android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/actorsPhoto2_imageView"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cast_textView"
             app:srcCompat="@drawable/pic_rober_downey" />
@@ -166,10 +169,11 @@
             android:layout_width="@dimen/actorPic_width"
             android:layout_height="@dimen/actorPic_height"
             android:layout_marginStart="@dimen/leftSideScreen_marginStart"
-            android:layout_marginTop="@dimen/actorPic_maginTop"
             android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/actorsPhoto3_imageView"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorsPhoto1_imageView"
-            app:layout_constraintTop_toBottomOf="@+id/cast_textView"
+            app:layout_constraintTop_toTopOf="@+id/actorsPhoto1_imageView"
             app:srcCompat="@drawable/pic_chris_evans" />
 
         <ImageView
@@ -177,10 +181,11 @@
             android:layout_width="@dimen/actorPic_width"
             android:layout_height="@dimen/actorPic_height"
             android:layout_marginStart="@dimen/leftSideScreen_marginStart"
-            android:layout_marginTop="@dimen/actorPic_maginTop"
             android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@+id/actorsPhoto4_imageView"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorsPhoto2_imageView"
-            app:layout_constraintTop_toBottomOf="@+id/cast_textView"
+            app:layout_constraintTop_toTopOf="@+id/actorsPhoto2_imageView"
             app:srcCompat="@drawable/pic_mark_ruffalo" />
 
         <ImageView
@@ -191,6 +196,7 @@
             android:layout_marginEnd="@dimen/actorsPhoto_imageView_marginEnd"
             android:contentDescription="@null"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorsPhoto3_imageView"
             app:layout_constraintTop_toTopOf="@+id/actorsPhoto3_imageView"
             app:srcCompat="@drawable/pic_chris_hemsworth" />
@@ -199,12 +205,12 @@
             android:id="@+id/actorsName1_textView"
             android:layout_width="@dimen/actorName_width_textView"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/leftSideScreen_marginStart"
             android:layout_marginTop="@dimen/actorName_marginTop_textView"
             android:text="@string/nameActor1"
             android:textColor="@color/light_gray"
             android:textSize="@dimen/second_deg_text"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/actorsPhoto1_imageView"
             app:layout_constraintTop_toBottomOf="@+id/actorsPhoto1_imageView" />
 
         <TextView
@@ -245,7 +251,7 @@
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="@dimen/match_constraint"
             android:layout_height="@dimen/ratingBar_height"
-            android:layout_marginStart="@dimen/ratingBar_marginStart"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="@dimen/ratingBar_marginTop"
             android:numStars="5"
             android:rating="4.0"
