@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="background_image_height">314dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="width_of_arrow">6dp</dimen>
+    <dimen name="arrow_height">10dp</dimen>
+    <dimen name="arrow_marginStart">18dp</dimen>
+    <dimen name="arrow_marginTop">59dp</dimen>
+    <dimen name="arrowText_marginStart">8dp</dimen>
+    <dimen name="arrowText_marginTop">56dp</dimen>
+    <dimen name="second_deg_text">12sp</dimen>
+    <dimen name="guideline_dist_begin">16dp</dimen>
+    <dimen name="leftSideScreen_marginStart">18dp</dimen>
+    <dimen name="ageLimit_marginTop">157dp</dimen>
+    <dimen name="actorName_width_textView">80dp</dimen>
+    <dimen name="actorName_marginTop_textView">6dp</dimen>
+    <dimen name="actorPic_width">80dp</dimen>
+    <dimen name="actorPic_height">80dp</dimen>
+    <dimen name="actorPic_maginTop">7dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="ratingBar_height">14dp</dimen>
+    <dimen name="ratingBar_marginStart">18dp</dimen>
+    <dimen name="ratingBar_marginTop">6dp</dimen>
+    <dimen name="mainName_textSize">40sp</dimen>
+    <dimen name="mainName_marginEnd">18dp</dimen>
+    <dimen name="first_deg_textSize">14sp</dimen>
+    <dimen name="cast_textView_marginTop">24dp</dimen>
+    <dimen name="category_textView_marginTop">4dp</dimen>
+    <dimen name="reviewers_textView_marginStart">8dp</dimen>
+    <dimen name="reviewers_textView_marginTop">4dp</dimen>
+    <dimen name="storyLine_textView_marginTop">28dp</dimen>
+    <dimen name="mainContent_textView_height">72dp</dimen>
+    <dimen name="mainContent_textView_marginTop">4dp</dimen>
+    <dimen name="mainContent_textView_marginEnd">18dp</dimen>
+    <dimen name="actorsPhoto_imageView_marginEnd">18dp</dimen>
+</resources>
