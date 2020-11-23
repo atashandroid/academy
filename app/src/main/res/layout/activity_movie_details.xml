@@ -18,6 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/background_image_height"
             android:contentDescription="@null"
+            android:scaleType="fitXY"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/background_pic1" />
@@ -121,7 +122,7 @@
         <TextView
             android:id="@+id/mainContent_textView"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/mainContent_textView_height"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/leftSideScreen_marginStart"
             android:layout_marginTop="@dimen/mainContent_textView_marginTop"
             android:layout_marginEnd="@dimen/mainContent_textView_marginEnd"
@@ -155,12 +156,11 @@
             android:id="@+id/actorsPhoto1_imageView"
             android:layout_width="@dimen/actorPic_width"
             android:layout_height="@dimen/actorPic_height"
-            android:layout_marginStart="@dimen/leftSideScreen_marginStart"
             android:layout_marginTop="@dimen/actorPic_maginTop"
             android:contentDescription="@null"
             app:layout_constraintEnd_toStartOf="@+id/actorsPhoto2_imageView"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/cast_textView"
             app:layout_constraintTop_toBottomOf="@+id/cast_textView"
             app:srcCompat="@drawable/pic_rober_downey" />
 
@@ -193,10 +193,8 @@
             android:layout_width="@dimen/actorPic_width"
             android:layout_height="@dimen/actorPic_height"
             android:layout_marginStart="@dimen/leftSideScreen_marginStart"
-            android:layout_marginEnd="@dimen/actorsPhoto_imageView_marginEnd"
             android:contentDescription="@null"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="@+id/mainContent_textView"
             app:layout_constraintStart_toEndOf="@+id/actorsPhoto3_imageView"
             app:layout_constraintTop_toTopOf="@+id/actorsPhoto3_imageView"
             app:srcCompat="@drawable/pic_chris_hemsworth" />
